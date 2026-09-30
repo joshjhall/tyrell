@@ -9,6 +9,7 @@ The brief: a designer's point of view, brought in by the FDPM at the end of week
 - **Short context deck:** the experience point of view; who the users are and what changes for them; where a human stays in the loop and what the handoff looks like; the 2–3 design decisions that matter most, with what was considered and rejected.
 - **A demo that runs**, not a static mock. Most of the time goes here. `sample_claims/` are the suggested inputs.
 - Budget: 4–6 hours total.
+- Current plan: [demo plan](/demo-plan-routing-pipeline-and-overlay.md).
 
 Explicitly **not** asked for: product strategy, business case, delivery plan (the PM's half), exhaustive data analysis, pixel polish.
 
