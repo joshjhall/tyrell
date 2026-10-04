@@ -680,9 +680,7 @@ def test_endpoint_json_carries_a_full_audit_record(monkeypatch):
     stub = Stub(response(signal("onset_gap", ONSET, "adjuster_notes.md")))
     monkeypatch.setattr(llm_signals, "make_client", lambda: stub)
     monkeypatch.setenv("ANTHROPIC_AUTH_TOKEN", "t")
-    body = client.post(
-        f"/claims/{C4222.claim_id}/signals", headers={"X-Tyrell-Panel": "1"}
-    ).json()
+    body = client.post(f"/claims/{C4222.claim_id}/signals", headers={"X-Tyrell-Panel": "1"}).json()
     audit = body["audit"]
     assert audit["model_version"] == f"{PIPELINE_VERSION}+signals:llm:claude-sonnet-5-5"
     assert audit["input_data_ref"].startswith(f"claimspro:{C4222.claim_id}@sha256:")
