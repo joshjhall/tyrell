@@ -29,7 +29,7 @@ jobs:
         with:
           enable-cache: true
           cache-dependency-glob: demo/backend/uv.lock
-      - uses: taiki-e/install-action@83ac0ad63c0167e6f06796fab0fce28db1bf3db0 # v2.87.22
+      - uses: taiki-e/install-action@86f7a0ffb25f40114606501a311ebcfaf882ea32 # v2.88.0
         with:
           tool: just@1.58.0
       # Python comes from demo/backend/.python-version (3.14); uv installs it.
@@ -46,7 +46,7 @@ jobs:
         with:
           enable-cache: true
           cache-dependency-glob: demo/backend/uv.lock
-      - uses: taiki-e/install-action@83ac0ad63c0167e6f06796fab0fce28db1bf3db0 # v2.87.22
+      - uses: taiki-e/install-action@86f7a0ffb25f40114606501a311ebcfaf882ea32 # v2.88.0
         with:
           tool: just@1.58.0
       - run: just css
@@ -73,7 +73,7 @@ jobs:
         with:
           enable-cache: true
           cache-dependency-glob: demo/backend/uv.lock
-      - uses: taiki-e/install-action@83ac0ad63c0167e6f06796fab0fce28db1bf3db0 # v2.87.22
+      - uses: taiki-e/install-action@86f7a0ffb25f40114606501a311ebcfaf882ea32 # v2.88.0
         with:
           tool: just@1.58.0,biome@2.5.14,dprint@0.57.4,taplo@0.10.0,typos@1.50.3,shfmt@3.14.1,shellcheck@0.10.0
       - name: Install rumdl and gitleaks
